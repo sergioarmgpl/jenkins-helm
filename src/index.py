@@ -24,7 +24,7 @@ def url_health3():
     return "Running"
 
 @app.route("/_health4")
-def url_health3():
+def url_health4():
     return "Running"
 
 if __name__ == '__main__':
