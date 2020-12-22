@@ -5,6 +5,8 @@ metadata:
     app: app1
   name: app1
   namespace: {{ .Values.namespace }}
+  annotations:
+    kubernetes.io/change-cause: {{ .Values.changeCause }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
